@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Appenders>
+        <RollingFile name="rollingFileAppender" fileName="C:/jenkins-apps/springboot/commercetools-api-integration/logs/commercetools-api-integration.log"
+                     filePattern="C:/jenkins-apps/springboot/commercetools-api-integration/logs/commercetools-api-integration-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="50 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="rollingFileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

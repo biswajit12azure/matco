@@ -1,0 +1,15 @@
+2024-05-10 11:13:04,802 INFO c.m.c.c.CustomerController [http-nio-19542-exec-10] Received request to lookup
+2024-05-10 11:13:04,961 DEBUG c.m.c.s.CustomerManagerService [http-nio-19542-exec-10] Searching for customer by token
+2024-05-10 11:13:05,055 DEBUG c.m.c.u.HttpUtils [http-nio-19542-exec-10] URL https://api.us-central1.gcp.commercetools.com/matco-dev-1/me bearer token 
+2024-05-10 11:13:09,922 DEBUG c.m.c.u.HttpUtils [http-nio-19542-exec-10] response com.commercetools.api.models.customer.CustomerImpl@691c8381
+2024-05-10 11:13:09,922 DEBUG c.m.c.s.CustomerManagerService [http-nio-19542-exec-10] Found customer with email spm-votech@matcotools.com and id a9e67a7f-8c2c-4954-bd11-9cd6f1bcdca2
+2024-05-10 11:13:10,929 INFO c.auth [ForkJoinPool-1-worker-1] POST https://auth.us-central1.gcp.commercetools.com/oauth/token 200
+2024-05-10 11:13:11,028 INFO c.c.response [ForkJoinPool-1-worker-1] GET https://api.us-central1.gcp.commercetools.com/matco-dev-1/custom-objects?where=id+%3D+%3Aid&var.id=e707af7a-81a8-4926-95f1-f44384126563 200 83 projects;dur=2 matco-dev-1/d84b303c-0524-41d3-b0ef-dccf934c0965
+2024-05-10 11:13:13,395 INFO c.m.c.c.CustomerController [http-nio-19542-exec-9] Received request to update customerData | ctId: a9e67a7f-8c2c-4954-bd11-9cd6f1bcdca2 | legacyId: 1079239
+2024-05-10 11:13:13,395 DEBUG c.m.c.u.HttpUtils [http-nio-19542-exec-9] URL: https://auth.us-central1.gcp.commercetools.com/oauth/token?grant_type=client_credentials
+2024-05-10 11:13:13,499 DEBUG c.m.c.u.HttpUtils [http-nio-19542-exec-9] URL https://api.us-central1.gcp.commercetools.com/matco-dev-1/customers/a9e67a7f-8c2c-4954-bd11-9cd6f1bcdca2 bearer token 
+2024-05-10 11:13:13,609 DEBUG c.m.c.u.HttpUtils [http-nio-19542-exec-9] response com.commercetools.api.models.customer.CustomerImpl@691c8381
+2024-05-10 11:13:13,609 DEBUG c.m.c.s.CustomerManagerService [http-nio-19542-exec-9] Received request to set externalId 1079239 to customer with email spm-votech@matcotools.com and id a9e67a7f-8c2c-4954-bd11-9cd6f1bcdca2
+2024-05-10 11:13:13,625 DEBUG c.m.c.u.HttpUtils [http-nio-19542-exec-9] URL https://api.us-central1.gcp.commercetools.com/matco-dev-1/customers/a9e67a7f-8c2c-4954-bd11-9cd6f1bcdca2 bearer token 
+2024-05-10 11:13:16,089 DEBUG c.m.c.u.HttpUtils [http-nio-19542-exec-9] response com.commercetools.api.models.customer.CustomerImpl@7c498497
+2024-05-10 11:13:16,089 DEBUG c.m.c.s.CustomerManagerService [http-nio-19542-exec-9] Successfully set external Id
