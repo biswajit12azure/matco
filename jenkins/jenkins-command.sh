@@ -1,0 +1,1 @@
+source ./jenkins/deploy.sh
